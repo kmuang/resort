@@ -1,174 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bali Paradise Resort</title> 
-<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bali Resort | Paradise Awaits</title> 
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-yellow-50 font-sans">
+<body class="font-sans text-gray-800">
 
-<!-- Header -->
-<header class="bg-green-700 text-white py-6 shadow-lg">
-  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-    <h1 class="text-3xl font-bold">🌴 Bali Paradise Resort</h1>
-    <nav>
-      <ul class="flex gap-6 text-white font-medium">
-        <li><a href="#features" class="hover:underline">Features</a></li>
-        <li><a href="#rooms" class="hover:underline">Rooms</a></li>
-        <li><a href="#reviews" class="hover:underline">Reviews</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');">
-  <div class="h-full w-full bg-black bg-opacity-40 flex items-center justify-center">
-    <h2 class="text-white text-4xl sm:text-5xl font-bold text-center">Experience the Magic of Bali</h2>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section id="features" class="max-w-6xl mx-auto mt-12 px-4">
-  <h2 class="text-3xl font-bold text-center mb-8 text-green-700">Our Exclusive Features</h2>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition cursor-pointer" data-image="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1200&q=80">
-      <img src="https://images.unsplash.com/photo-1536745511564-a5fa6e596e7b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3dpbW1pbmclMjBwb29sfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1400" alt="Infinity Pool" class="mx-auto mb-4 rounded-full">
-      <h3 class="font-semibold text-xl mb-2">Infinity Pool</h3>
-      <p class="text-gray-700 mb-2">
-        Dive into our stunning infinity pool overlooking Bali’s pristine beaches. Enjoy tropical cocktails and sunbeds as you soak up the sun.
-      </p>
-      <ul class="text-gray-700 text-sm list-disc list-inside">
-        <li>Sunset views over the ocean</li>
-        <li>Private poolside cabanas</li>
-        <li>Refreshing tropical drinks</li>
-      </ul>
+  <!-- HEADER -->
+  <header class="absolute top-0 left-0 w-full z-30 bg-transparent text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl sm:text-3xl font-bold">🏝️ Bali Resort</h1>
+      <nav>
+        <ul class="flex flex-wrap gap-4 sm:gap-6 font-medium">
+          <li><a href="#services" class="hover:text-yellow-300 transition text-sm sm:text-base">Services</a></li>
+          <li><a href="#suites" class="hover:text-yellow-300 transition text-sm sm:text-base">Suites</a></li>
+          <li><a href="#reviews" class="hover:text-yellow-300 transition text-sm sm:text-base">What Guests Say</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300 transition text-sm sm:text-base">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition cursor-pointer" data-image="https://images.unsplash.com/photo-1588776814546-7ac8b8e2ef0e?auto=format&fit=crop&w=1200&q=80">
-      <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bHV4dXJ5JTIwc3BhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1400" alt="Luxury Spa" class="mx-auto mb-4 rounded-full">
-      <h3 class="font-semibold text-xl mb-2">Luxury Spa</h3>
-      <p class="text-gray-700 mb-2">
-        Rejuvenate with our signature Balinese massages, facials, and wellness rituals designed for pure relaxation and inner harmony.
+  </header>
+
+  <!-- HERO + SERVICES VIDEO SECTION -->
+  <section class="relative h-[130vh] sm:h-[110vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="absolute w-auto min-w-full min-h-full object-cover">
+      <source src="vid/bali.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 px-4 sm:px-6">
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6">Welcome to Ocean Bliss Resort</h2>
+      <p class="text-base sm:text-lg md:text-xl max-w-xl sm:max-w-2xl mx-auto mb-6 sm:mb-8">
+        Discover pure tranquility with oceanfront villas, infinity pools, and world-class dining.
       </p>
-      <ul class="text-gray-700 text-sm list-disc list-inside">
-        <li>Aromatherapy and flower baths</li>
-        <li>Traditional Balinese massage</li>
-        <li>Private spa pavilions with tropical views</li>
-      </ul>
+      <a href="#services" class="bg-yellow-500 hover:bg-yellow-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-semibold transition">
+        Explore More
+      </a>
     </div>
-    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition cursor-pointer" data-image="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80">
-      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=80&q=80" alt="Gourmet Dining" class="mx-auto mb-4 rounded-full">
-      <h3 class="font-semibold text-xl mb-2">Gourmet Dining</h3>
-      <p class="text-gray-700 mb-2">
-        Savor authentic Balinese and international cuisine prepared by top chefs, with ingredients sourced locally for the freshest taste.
-      </p>
-      <ul class="text-gray-700 text-sm list-disc list-inside">
-        <li>Beachfront dining with sunset views</li>
-        <li>Exotic seafood and tropical fruits</li>
-        <li>Private candlelight dinners available</li>
-      </ul>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="relative z-10 -mt-20 max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-20">
+    <div class="bg-white/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg text-center hover:bg-white/90 transition cursor-pointer"
+         data-image="https://images.unsplash.com/photo-1536745511564-a5fa6e596e7b?auto=format&fit=crop&w=600&q=60"
+         data-title="Infinity Pool"
+         data-description="Swim under the sun and stars with ocean views that stretch beyond the horizon."
+         data-features="Ocean-view lounge deck, Private cabanas, Sunset cocktail service">
+      <img src="https://images.unsplash.com/photo-1536745511564-a5fa6e596e7b?auto=format&fit=crop&w=600&q=60" alt="Infinity Pool" class="rounded-full w-20 sm:w-24 h-20 sm:h-24 object-cover mx-auto mb-3 sm:mb-4">
+      <h3 class="font-semibold text-lg sm:text-xl mb-1 sm:mb-2 text-green-700">Infinity Pool</h3>
+      <p class="text-sm sm:text-base">Swim under the sun and stars with ocean views that stretch beyond the horizon.</p>
+    </div>
+
+    <div class="bg-white/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg text-center hover:bg-white/90 transition cursor-pointer"
+         data-image="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=600&q=60"
+         data-title="Luxury Spa"
+         data-description="Rejuvenate your body and soul with traditional Balinese therapies and essential oils."
+         data-features="Traditional massages, Steam and flower baths, Personal wellness experts">
+      <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=600&q=60" alt="Luxury Spa" class="rounded-full w-20 sm:w-24 h-20 sm:h-24 object-cover mx-auto mb-3 sm:mb-4">
+      <h3 class="font-semibold text-lg sm:text-xl mb-1 sm:mb-2 text-green-700">Luxury Spa</h3>
+      <p class="text-sm sm:text-base">Rejuvenate your body and soul with traditional Balinese therapies and essential oils.</p>
+    </div>
+
+    <div class="bg-white/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg text-center hover:bg-white/90 transition cursor-pointer"
+         data-image="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=60"
+         data-title="Gourmet Dining"
+         data-description="Enjoy seaside dining with premium seafood and international cuisine made by top chefs."
+         data-features="Beachfront dining, Private candlelight dinners, Fresh seafood and tropical fruit">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=60" alt="Gourmet Dining" class="rounded-full w-20 sm:w-24 h-20 sm:h-24 object-cover mx-auto mb-3 sm:mb-4">
+      <h3 class="font-semibold text-lg sm:text-xl mb-1 sm:mb-2 text-green-700">Gourmet Dining</h3>
+      <p class="text-sm sm:text-base">Enjoy seaside dining with premium seafood and international cuisine made by top chefs.</p>
+    </div>
+  </section>
+
+  <!-- MODAL FOR SERVICE DETAILS -->
+  <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50 p-4 overflow-auto">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full relative p-6 sm:p-8">
+      <button id="close-modal" class="absolute top-4 right-4 text-black text-3xl font-bold">&times;</button>
+      <img id="modal-image" alt="Service Image" class="w-full h-64 sm:h-80 object-cover rounded-lg mb-4">
+      <h3 id="modal-title" class="text-2xl font-bold mb-2 text-green-700"></h3>
+      <p id="modal-description" class="text-gray-700 mb-3"></p>
+      <ul id="modal-features" class="list-disc list-inside text-gray-600"></ul>
     </div>
   </div>
-</section>
 
-<!-- Rooms Section -->
-<section id="rooms" class="max-w-6xl mx-auto mt-16 px-4">
-  <h2 class="text-3xl font-bold text-center mb-8 text-green-700">Our Rooms</h2>
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=400&q=80" alt="Beach Villa" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2">Beachfront Villa</h3>
-        <p class="text-gray-700">Spacious villa with direct beach access, private terrace, and panoramic ocean views for a perfect Bali getaway.</p>
+  <!-- SUITES SECTION -->
+  <section id="suites" class="max-w-6xl mx-auto px-4 sm:px-6 mb-20">
+    <h2 class="text-2xl sm:text-3xl font-bold text-green-700 text-center mb-8 sm:mb-10">Our Exclusive Suites</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=400&q=80" alt="Beach Villa" class="w-full h-48 sm:h-56 object-cover">
+        <div class="p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Beachfront Villa</h3>
+          <p class="text-sm sm:text-base">Spacious villa with direct beach access, private terrace, and panoramic ocean views.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1568402102889-8307563f757f?auto=format&fit=crop&w=400&q=80" alt="Jungle Suite" class="w-full h-48 sm:h-56 object-cover">
+        <div class="p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Jungle Suite</h3>
+          <p class="text-sm sm:text-base">Located amidst lush greenery, this suite offers luxury and tranquility.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1728049006296-0f637414d9d7?auto=format&fit=crop&w=400&q=80" alt="Private Pool Villa" class="w-full h-48 sm:h-56 object-cover">
+        <div class="p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Private Pool Villa</h3>
+          <p class="text-sm sm:text-base">Exclusive villa with private infinity pool, tropical garden, and personalized service.</p>
+        </div>
       </div>
     </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1568402102889-8307563f757f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8anVuZ2xlJTIwc3VpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1400" alt="Jungle Suite" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2">Jungle Suite</h3>
-        <p class="text-gray-700">Nestled in lush greenery, this suite offers tranquility with a luxurious interior and private balcony.</p>
-      </div>
+  </section>
+
+  <!-- WHAT GUESTS SAY SECTION -->
+  <section id="reviews" class="max-w-6xl mx-auto px-4 sm:px-6 mb-20">
+    <h2 class="text-2xl sm:text-3xl font-bold text-green-700 text-center mb-8 sm:mb-10">What Our Guests Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="review-list"></div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-yellow-50 py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto text-center px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-green-700 mb-4 sm:mb-6">Plan Your Perfect Getaway</h2>
+      <p class="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">Let us make your vacation unforgettable.</p>
+      <a href="mailto:reservations@oceanbliss.com" class="bg-green-700 hover:bg-green-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium transition">Contact Us</a>
     </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1728049006296-0f637414d9d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJpdmF0ZSUyMHBvb2wlMjB2aWxsYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=1400" alt="Private Pool Villa" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2">Private Pool Villa</h3>
-        <p class="text-gray-700">Exclusive villa with private infinity pool, tropical garden, and personalized service for a luxurious stay.</p>
-      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-700 text-white text-center py-6">
+    <p>© 2025 Ocean Bliss Resort. All rights reserved.</p>
+    <div class="flex justify-center gap-4 mt-2">
+      <a href="#" class="hover:text-yellow-300 transition">Facebook</a>
+      <a href="#" class="hover:text-yellow-300 transition">Instagram</a>
+      <a href="#" class="hover:text-yellow-300 transition">Twitter</a>
+      <a href="#" class="hover:text-yellow-300 transition">YouTube</a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- Customer Reviews Section -->
-<section id="reviews" class="max-w-6xl mx-auto mt-16 px-4 mb-12">
-  <h2 class="text-3xl font-bold text-center mb-8 text-green-700">Customer Reviews</h2>
-  <div id="review-list" class="space-y-6"></div>
-</section>
+  <!-- SCRIPTS -->
+  <script>
+    // Services modal with details
+    const serviceCards = document.querySelectorAll('#services .bg-white\\/80');
+    const modal = document.getElementById('service-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalFeatures = document.getElementById('modal-features');
+    const closeModal = document.getElementById('close-modal');
 
-<!-- Image Modal -->
-<div id="service-modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50 p-4">
-  <img id="modal-image" src="" alt="Service" class="max-h-[80vh] max-w-[80vw] rounded-lg shadow-xl transition-transform duration-300 scale-100">
-  <button id="close-modal" class="absolute top-4 right-4 text-white text-4xl font-bold">&times;</button>
-</div>
+    serviceCards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalImage.src = card.getAttribute('data-image');
+        modalTitle.textContent = card.getAttribute('data-title');
+        modalDescription.textContent = card.getAttribute('data-description');
+        const features = card.getAttribute('data-features').split(', ');
+        modalFeatures.innerHTML = '';
+        features.forEach(f => {
+          const li = document.createElement('li');
+          li.textContent = f;
+          modalFeatures.appendChild(li);
+        });
+        modal.classList.remove('hidden');
+      });
+    });
 
-<!-- Footer -->
-<footer class="bg-green-700 text-white py-6 mt-auto">
-  <div class="max-w-6xl mx-auto text-center">
-    &copy; 2025 Bali Paradise Resort. All rights reserved.
-  </div>
-</footer>
+    closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
 
-<!-- JavaScript -->
-<script>
-// Customer Reviews
-const reviews = [
-  { name: 'John Doe', rating: 5, text: 'Amazing experience! The infinity pool is breathtaking and the staff is superb.' },
-  { name: 'Jane Smith', rating: 4, text: 'The spa treatments were incredible and very relaxing. Highly recommend!' },
-  { name: 'Michael Brown', rating: 5, text: 'Gourmet dining exceeded expectations. The seafood was fresh and delicious.' },
-  { name: 'Emily Clark', rating: 4, text: 'Rooms are very comfortable and the service is top-notch.' },
-  { name: 'Sophia Wilson', rating: 5, text: 'Best resort ever! Perfect for a weekend getaway with family.' },
-];
+    // Guest reviews
+    const reviews = [
+      { name: 'John Doe', rating: 5, text: 'Amazing experience! Infinity pool is breathtaking and staff is superb.' },
+      { name: 'Jane Smith', rating: 4, text: 'Spa treatments were incredible and very relaxing. Highly recommend!' },
+      { name: 'Michael Brown', rating: 5, text: 'Gourmet dining exceeded expectations. Fresh seafood was delicious.' },
+      { name: 'Emily Clark', rating: 4, text: 'Rooms are very comfortable and service is top-notch.' },
+      { name: 'Sophia Wilson', rating: 5, text: 'Best resort ever! Perfect for a family weekend getaway.' },
+    ];
 
-const reviewList = document.getElementById('review-list');
-reviews.forEach(review => {
-  const reviewItem = document.createElement('div');
-  reviewItem.className = "bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition";
-  reviewItem.innerHTML = `
-    <h4 class="font-semibold text-lg mb-2">${review.name}</h4>
-    <div class="flex mb-2">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
-    <p class="text-gray-700">${review.text}</p>
-  `;
-  reviewList.appendChild(reviewItem);
-});
-
-// Service Modal
-const serviceCards = document.querySelectorAll('#features .bg-white');
-const modal = document.getElementById('service-modal');
-const modalImage = document.getElementById('modal-image');
-const closeModal = document.getElementById('close-modal');
-
-serviceCards.forEach(card => {
-  card.addEventListener('click', () => {
-    modalImage.src = card.getAttribute('data-image');
-    modal.classList.remove('hidden');
-    modalImage.classList.add('scale-110'); // Slight zoom for effect
-  });
-});
-
-closeModal.addEventListener('click', () => {
-  modal.classList.add('hidden');
-  modalImage.classList.remove('scale-110');
-});
-
-modal.addEventListener('click', (e) => {
-  if(e.target === modal) {
-    modal.classList.add('hidden');
-    modalImage.classList.remove('scale-110');
-  }
-});
-</script>
+    const reviewList = document.getElementById('review-list');
+    reviews.forEach(review => {
+      const reviewItem = document.createElement('div');
+      reviewItem.className = "bg-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition";
+      reviewItem.innerHTML = `
+        <h4 class="font-semibold text-base sm:text-lg mb-1 sm:mb-2">${review.name}</h4>
+        <div class="flex mb-1 sm:mb-2 text-yellow-400">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+        <p class="text-sm sm:text-base text-gray-700">${review.text}</p>
+      `;
+      reviewList.appendChild(reviewItem);
+    });
+  </script>
 
 </body>
 </html>
